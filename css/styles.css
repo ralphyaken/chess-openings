@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Roboto:ital,wght@1,100&display=swap');
+body {
+    display: flex;
+    font-family: Roboto, sans-serif;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+* {
+    list-style-type: none;
+    margin: 0;
+}
+
+/* arrows */
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: underline;
+    color: black;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 1% 20%;
+    background-color: #ef5b5b;
+    color: white;
+    max-height: 300px;
+}
+
+.links ul li ul li #black {
+    color: black;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.links ul li {
+    position: relative;
+    padding: 4px;
+    display: block;
+}
+
+.links ul li a {
+    padding: 10px 10px;
+}
+
+.links ul li ul {
+    display: none;
+    margin: 10px;
+}
+
+.links ul li:hover ul{
+    display: block;
+    position: absolute;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    padding: 30% 7%;
+    background-color: #ef5b5b;
+    color: white;
+}
